@@ -1,0 +1,542 @@
+{
+  "landing": {
+    "nav": {
+      "login": "Sign in",
+      "signup": "Create account"
+    },
+    "hero": {
+      "badge": "PLS, Horizon, CMA — Immediate ROI",
+      "title": "A brief, a request, a query.",
+      "subtitle": "Deliverables ready to send.",
+      "tagline2": "In seconds.",
+      "description": "Léo is an intelligent sales agent, connected to your data — transforming every request into strategic recommendations and client deliverables instantly.",
+      "cta": "Schedule a demo",
+      "demo": "See Léo in action",
+      "socialProof": "Visible results from the first week — zero training needed"
+    },
+    "stats": {
+      "speed": "~30s",
+      "speedLabel": "from request to complete deliverable",
+      "time": "12h",
+      "timeLabel": "recovered per team each week",
+      "errors": "0",
+      "errorsLabel": "production errors on deliverables"
+    },
+    "power": {
+      "eyebrow": "The Léo engine",
+      "title": "An AI that analyzes, vectorizes, orchestrates — without human intervention.",
+      "description": "Léo analyzes each request in natural language, vectorizes your internal databases, orchestrates business rules and instantly generates strategic recommendations and client deliverables — without human intervention. In seconds."
+    },
+    "metrics": {
+      "velocity": "+x3",
+      "velocityTitle": "Sales velocity",
+      "velocityDesc": "Handle 3x more requests with the same teams. Every opportunity seized in real time.",
+      "production": "-80%",
+      "productionTitle": "Production time",
+      "productionDesc": "What takes hours takes seconds. Your teams focus on what generates revenue.",
+      "data": "100%",
+      "dataTitle": "Data leveraged",
+      "dataDesc": "Your business, sales, product databases — Léo reads them all, in real time, without errors.",
+      "roi": "Day 1",
+      "roiTitle": "Measurable ROI",
+      "roiDesc": "From setup to 6 months. Léo is operational on your data from the first week."
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "Connected to your data. 4 steps. Seconds.",
+      "description": "Your marketing, sales, product, media, financial databases — Léo ingests, understands and orchestrates them to produce.",
+      "step1Title": "Analyzes the request",
+      "step1Desc": "Brief, email, RFP — Léo understands intent in natural language.",
+      "step2Title": "Queries your databases",
+      "step2Desc": "Real-time access to your internal data. Reliable results, always up to date.",
+      "step3Title": "Builds the strategy",
+      "step3Desc": "Selection, argumentation, structuring — a complete and coherent recommendation.",
+      "step4Title": "Generates deliverables",
+      "step4Desc": "Decks, recommendations, documents — branded to your image, ready to send."
+    },
+    "quote": {
+      "text": "\"Making proposals, searching through files — that's what weighs on us. What we want is to be face-to-face with our clients.\"",
+      "cite": "— Field verbatim, French media company"
+    },
+    "outputs": {
+      "eyebrow": "The deliverables",
+      "title": "Everything Léo generates in a single sequence.",
+      "description": "Each deliverable respects your brand DNA — branded, structured, directly transmittable.",
+      "item1": "Strategic recommendation",
+      "item2": "Presentation deck",
+      "item3": "Commercial activation plan",
+      "item4": "Personalized client email",
+      "item5": "Summary and costing",
+      "item6": "Any other business format"
+    },
+    "testimonial": {
+      "text": "\"Léo transforms how sales teams produce their recommendations. It's exactly the lever media groups were waiting for to free up their sales time.\"",
+      "name": "Adrien Lepage",
+      "title": "Managing Director, WPP — AI Media Advisor, FLAIX"
+    },
+    "board": {
+      "eyebrow": "The FLAIX board",
+      "title": "Experts at the heart of AI-powered commercial transformation.",
+      "description": "FLAIX relies on a board of experts from leading media groups, tech and press.",
+      "member1Name": "Maxime Tallet",
+      "member1Role": "Founder & CEO",
+      "member1Org": "FLAIX",
+      "member1Tag": "Founder",
+      "member2Name": "Marlowe Recoing",
+      "member2Role": "CTO",
+      "member2Org": "FLAIX",
+      "member2Tag": "Tech & AI",
+      "member3Name": "Adrien Lepage",
+      "member3Role": "AI Media Advisor",
+      "member3Org": "Managing Director, WPP",
+      "member3Tag": "Advisor",
+      "member4Name": "Martin Clamart",
+      "member4Role": "Editorial & Press Advisor",
+      "member4Org": "Le Monde",
+      "member4Tag": "Advisor"
+    },
+    "clients": {
+      "pill1": "PLS Media",
+      "pill2": "Horizon",
+      "pill3": "CMA"
+    },
+    "cta": {
+      "title": "See Léo on a real brief.",
+      "description": "20 minutes. Your data. Your deliverables. ROI visible immediately.",
+      "button": "Schedule a free demo"
+    },
+    "demo": {
+      "title": "Schedule a demo",
+      "description": "Leave us your contact details and we'll reach out quickly to organize a personalized demonstration.",
+      "name": "Full name",
+      "email": "Professional email",
+      "phone": "Phone",
+      "company": "Company",
+      "message": "Message (optional)",
+      "messagePlaceholder": "Tell us about your needs...",
+      "cancel": "Cancel",
+      "submit": "Send request",
+      "contact": "You can also contact us directly:",
+      "success": "Request sent!",
+      "successDesc": "We will contact you very soon."
+    }
+  },
+  "auth": {
+    "back": "Back",
+    "login": {
+      "title": "Sign in",
+      "description": "Sign in to access your dashboard"
+    },
+    "signup": {
+      "title": "Create an account",
+      "description": "Join FLAIX and automate your media quotes"
+    },
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "password": "Password",
+      "role": "Role"
+    },
+    "roles": {
+      "commercial": "Sales",
+      "directeur": "Director",
+      "admin": "Administrator"
+    },
+    "buttons": {
+      "login": "Sign in",
+      "signup": "Create account",
+      "loading": "Loading..."
+    },
+    "links": {
+      "noAccount": "No account yet?",
+      "hasAccount": "Already have an account?",
+      "createAccount": "Create an account",
+      "signIn": "Sign in"
+    },
+    "errors": {
+      "loginTitle": "Login error",
+      "loginDesc": "Incorrect email or password",
+      "signupTitle": "Registration error",
+      "signupDesc": "Unable to create account",
+      "genericTitle": "Error",
+      "genericDesc": "An unexpected error occurred. Check your internet connection."
+    },
+    "success": {
+      "signupTitle": "Account created successfully",
+      "signupDesc": "You can now sign in",
+      "loginTitle": "Login successful",
+      "loginDesc": "Welcome to FLAIX"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome to your dashboard,",
+    "connectedAs": "Signed in as",
+    "hero": {
+      "title1": "Create a new",
+      "title2": "recommendation",
+      "description": "Generate an AI-optimized media plan in minutes",
+      "button": "New brief"
+    },
+    "metrics": {
+      "title": "Performance metrics",
+      "briefs": "Automated briefs",
+      "timeSaved": "Time saved / brief",
+      "usage": "AI usage rate",
+      "budget": "Total quote value"
+    },
+    "recent": {
+      "title": "Recent recommendations",
+      "description": "History of media plans generated by FLAIX",
+      "viewAll": "View all history",
+      "empty": {
+        "title": "No recommendations",
+        "description": "Start by creating your first AI recommendation to generate optimized media plans",
+        "button": "Create my first recommendation"
+      },
+      "loading": "Loading..."
+    },
+    "channels": {
+      "web": "Digital",
+      "print": "Print",
+      "newsletter": "Newsletter",
+      "mixed": "Multi-channel"
+    },
+    "settings": {
+      "title1": "Account",
+      "title2": "settings",
+      "description": "Manage your identity and company information",
+      "identity": {
+        "title": "Identity & Branding",
+        "logo": "Company logo",
+        "logoFormat": "PNG or SVG, max 2MB",
+        "company": "Agency / company name",
+        "contact": "Main contact",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "admin": {
+        "title": "Administrative information",
+        "terms": "Terms / Legal notices",
+        "upload": "Upload PDF",
+        "address": "Billing address",
+        "language": "Default language",
+        "timezone": "Timezone"
+      },
+      "actions": {
+        "save": "Save settings",
+        "logout": "Sign out",
+        "version": "App version: v1.0.0 – October 2025"
+      },
+      "success": {
+        "title": "Settings saved",
+        "description": "Your changes have been saved successfully"
+      }
+    },
+    "logout": {
+      "title": "Logout successful",
+      "description": "See you soon on FLAIX"
+    }
+  },
+  "createProject": {
+    "title": "Enter a",
+    "titleHighlight": "new brief",
+    "description": "Describe your needs and let LEO generate your recommendations",
+    "tabs": {
+      "prompt": "Free prompt",
+      "form": "Form"
+    },
+    "prompt": {
+      "title": "Describe your brief",
+      "description": "Write or paste your brief in free text. LEO will analyze it to generate recommendations.",
+      "placeholder": "Example: Client XYZ wants to launch a campaign to promote their new product to 25-45 year olds, upper income. Budget: €50,000. Goal: generate awareness and web traffic. Channels considered: digital + press.",
+      "tip": "The more detailed your brief, the more accurate the recommendations will be.",
+      "info": "Information is processed in real-time by our AI connected to your data."
+    },
+    "form": {
+      "title": "Structured form",
+      "description": "Fill in the fields to create your brief in a guided way.",
+      "clientName": "Client name",
+      "campaignName": "Campaign name",
+      "objective": "Campaign objective",
+      "target": "Main targets",
+      "period": "Period",
+      "channel": "Channels considered",
+      "budget": "Budget (€)",
+      "channels": {
+        "web": "Web / Digital",
+        "print": "Print / Press",
+        "newsletter": "Newsletter",
+        "mixed": "Media mix"
+      }
+    },
+    "button": "Generate AI recommendation",
+    "buttonLoading": "Generating..."
+  },
+  "common": {
+    "excel": "Excel generating",
+    "powerpoint": "PowerPoint generating",
+    "email": "Email being prepared",
+    "min": "min"
+  },
+  "briefReview": {
+    "title": "offers you two",
+    "titleHighlight": "strategic approaches",
+    "description": "Select the strategy that best matches your objectives, or refine according to your expertise",
+    "feedback": {
+      "title": "Refine with your expertise",
+      "description": "AI and human intelligence: share your insights or request specific adjustments",
+      "question": "Does this strategy suit you?",
+      "yes": "Yes",
+      "adjust": "Adjustments needed",
+      "adjustLabel": "Your adjustment recommendations",
+      "adjustPlaceholder": "Ex: Increase social media share to 40%, favor Instagram Stories, add retargeting...",
+      "tip": "LEO will consider your suggestions to refine the strategy"
+    },
+    "strategy": {
+      "recommended": "Recommended",
+      "pros": "Advantages",
+      "cons": "Considerations"
+    },
+    "strategy1": {
+      "name": "Balanced Multi-Channel Approach",
+      "description": "Optimal strategy to maximize reach while maintaining a competitive CPM",
+      "pros1": "Wide coverage of your target (85% reach)",
+      "pros2": "Optimal Display + Social + Search mix",
+      "pros3": "Predictable ROI based on sector data",
+      "cons1": "Requires multi-platform management",
+      "cons2": "Budget spread across multiple channels"
+    },
+    "strategy2": {
+      "name": "Social & Engagement Focus",
+      "description": "Focus on social networks to maximize engagement and branding",
+      "pros1": "High engagement rate (4-6%)",
+      "pros2": "Ideal for brand awareness",
+      "pros3": "Precise targeting by interests",
+      "cons1": "Limited reach to social audience",
+      "cons2": "Less impact on direct conversions"
+    },
+    "table": {
+      "title": "Selected media inventory -",
+      "description": "Budget allocation and forecast KPIs",
+      "channel": "Channel",
+      "support": "Platform",
+      "format": "Format",
+      "audience": "Audience",
+      "impressions": "Impressions",
+      "budget": "Budget",
+      "percentage": "%",
+      "total": "TOTAL"
+    },
+    "summary": {
+      "title": "Summary",
+      "totalBudget": "Total budget",
+      "supports": "Number of media",
+      "channels": "Activated channels"
+    },
+    "actions": {
+      "generate": "Generate AI recommendation",
+      "tip": "Information is processed in real-time by our AI connected to your data.",
+      "adjust": "Adjust manually"
+    }
+  },
+  "chat": {
+    "emptyState": {
+      "title": "Hello!",
+      "description": "Your media assistant. Describe your client's brief and I'll find the right media placements."
+    },
+    "placeholder": "Describe your needs...",
+    "suggestions": {
+      "s1": "Here's my client's brief: targeting pharmacists in Île-de-France",
+      "s2": "I'm looking for media to reach general practitioners",
+      "s3": "I need print placements for a dental campaign",
+      "s4": "My client wants to reach physiotherapists in the PACA region"
+    },
+    "shimmer": {
+      "ragSearch": "Searching for \"{{query}}\"…",
+      "ragSearchDefault": "Searching…",
+      "refineSelection": "Updating selection…",
+      "calculatePricing": "Calculating pricing…",
+      "adjustSupport": "Adjusting…",
+      "collectMetadata": "Checking metadata…",
+      "generateExcel": "Preparing quote…",
+      "generatePpt": "Preparing the presentation…",
+      "draftEmail": "Drafting the email…",
+      "strategicRecommendation": "Building recommendation…",
+      "default": "Processing…",
+      "thinking": "Thinking…",
+      "loading": "Loading conversation..."
+    },
+    "toolResult": "Search results",
+    "actions": {
+      "copy": "Copy",
+      "copyLabel": "Copy response",
+      "regenerate": "Regenerate",
+      "regenerateLabel": "Regenerate response"
+    },
+    "sidebar": {
+      "newBrief": "New brief",
+      "loading": "Loading...",
+      "noConversations": "No conversations",
+      "noConversationsDesc": "Start a new brief to get started."
+    },
+    "siteHeader": {
+      "newConversation": "New Conversation"
+    },
+    "workingPanel": {
+      "title": "Selection",
+      "emptyState": "No media selected — start with a search",
+      "removed": "{{name}} removed",
+      "removeFailed": "Unable to remove {{name}}",
+      "reAdded": "{{name}} added back to selection",
+      "reAddFailed": "Unable to re-add media"
+    },
+    "deliverables": {
+      "title": "Recent deliverables",
+      "downloadExcel": "Download quote",
+      "downloadPpt": "Download presentation",
+      "openConversation": "Open conversation",
+      "downloadError": "Unable to download the file",
+      "empty": "No recent deliverables",
+      "excel": "Excel Quote",
+      "ppt": "PPT Presentation",
+      "email": "Email",
+      "generate": "Generate",
+      "preview": "Preview",
+      "download": "Download",
+      "regenerate": "Regenerate",
+      "retry": "Retry",
+      "processing": "Processing…",
+      "failed": "Failed",
+      "copyEmail": "Copy email",
+      "copied": "Email copied!",
+      "promptExcel": "Generate the Excel quote with the selected media.",
+      "promptPpt": "Generate the PowerPoint presentation with the selected media.",
+      "promptEmail": "Draft the client email."
+    },
+    "tableSummary": {
+      "supports": "{{count}} media",
+      "supports_plural": "{{count}} media",
+      "netTotal": "Net total: {{total}}"
+    },
+    "welcome": {
+      "morning1": "Good morning {{firstName}}, ready to start a brief?",
+      "morning2": "Hey {{firstName}}, what are we building this morning?",
+      "morning3": "Hello {{firstName}}, got a new project in mind?",
+      "afternoon1": "{{firstName}}, what brief for this afternoon?",
+      "afternoon2": "Hey {{firstName}}, what are we working on?",
+      "afternoon3": "{{firstName}}, a new media plan to build?",
+      "evening1": "Good evening {{firstName}}, one more brief tonight?",
+      "evening2": "{{firstName}}, one last recommendation before you go?",
+      "evening3": "Hey {{firstName}}, let's end the day on a high note?",
+      "lateNight1": "{{firstName}}, what's keeping you up?",
+      "lateNight2": "Still here {{firstName}}? Let's do one more brief.",
+      "lateNight3": "{{firstName}}, the best ideas come at night.",
+      "org": {
+        "morning1": "Good morning {{orgName}}, what would you like Léo to work on?",
+        "morning2": "Good morning {{orgName}}, Léo is ready — what are we building today?",
+        "morning3": "Good morning {{orgName}}, where shall we start?",
+        "afternoon1": "{{orgName}}, what brief do you have for this afternoon?",
+        "afternoon2": "{{orgName}}, which project are we working on?",
+        "afternoon3": "{{orgName}}, ready to build a new media plan?",
+        "evening1": "Good evening {{orgName}}, got one more brief for tonight?",
+        "evening2": "{{orgName}}, one last recommendation before you leave?",
+        "evening3": "Good evening {{orgName}}, Léo is available.",
+        "lateNight1": "{{orgName}}, what's keeping you up tonight?",
+        "lateNight2": "Still here {{orgName}}? Let's do one more brief.",
+        "lateNight3": "{{orgName}}, the best ideas come at night."
+      },
+      "helperText": "Start by sharing your client brief or ask me to search for specific media placements.",
+      "recentExports": "Recent exports",
+      "download": "Download",
+      "openChat": "Open conversation"
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "history": "History",
+    "settings": "Settings",
+    "logout": "Sign out"
+  },
+  "results": {
+    "badge": "Documents ready",
+    "title": "Your",
+    "titleHighlight": "recommendation",
+    "titleEnd": "is ready",
+    "subtitle": "Strategy validated, documents generated and ready to download",
+    "strategy": {
+      "defaultTitle": "Optimized media strategy",
+      "defaultRecommendation": "This approach ensures optimal ROI while maximizing reach and engagement."
+    },
+    "focus": {
+      "label": "Campaign FOCUS:",
+      "title": "Strategy and commercial rationale",
+      "intro": "This strategy was designed by LEO by analyzing your brief, your target, and industry best practices.",
+      "keyPoints": "Key recommendation points",
+      "keyPoint1": "Maximum coverage of your target audience with {{channels}} complementary channels",
+      "keyPoint2": "Budget optimized according to current market rates and sector performance",
+      "keyPoint3": "Balanced media mix between awareness, consideration, and conversion",
+      "keyPoint4": "Data-driven approach based on similar campaign histories",
+      "proposition": "Commercial proposal"
+    },
+    "budget": {
+      "title": "Budget summary",
+      "description": "Media allocation overview",
+      "total": "Total budget",
+      "impressions": "Estimated impressions",
+      "supports": "Activated platforms"
+    },
+    "preview": {
+      "title": "Media plan preview",
+      "description": "Details of recommendations included in documents"
+    },
+    "generation": {
+      "success": "Generation successful",
+      "message": "Documents successfully created and ready to present to your client."
+    },
+    "downloads": {
+      "title": "Downloads",
+      "description": "Ready-to-use documents",
+      "excel": {
+        "title": "Excel Quote",
+        "subtitle": "Detailed tables",
+        "ready": "Ready",
+        "download": "Download Excel",
+        "downloading": "Downloading...",
+        "success": "Download successful",
+        "successDesc": "Excel file downloaded successfully."
+      },
+      "powerpoint": {
+        "title": "PowerPoint Presentation",
+        "subtitle": "Professional slides",
+        "ready": "Ready",
+        "download": "Download PowerPoint",
+        "downloading": "Downloading...",
+        "success": "Download successful",
+        "successDesc": "PowerPoint presentation downloaded successfully."
+      },
+      "email": {
+        "title": "Send by email",
+        "subtitle": "With attachments",
+        "ready": "Ready",
+        "send": "Send recommendation",
+        "sending": "Sending...",
+        "success": "Email prepared",
+        "successDesc": "Your email client opened with the recommendation."
+      }
+    },
+    "actions": {
+      "history": "View history",
+      "newBrief": "New brief"
+    },
+    "table": {
+      "channel": "Channel",
+      "support": "Platform",
+      "format": "Format",
+      "audience": "Audience",
+      "impressions": "Impressions",
+      "budget": "Budget",
+      "percentage": "%",
+      "total": "TOTAL"
+    }
+  }
+}

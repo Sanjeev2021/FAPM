@@ -1,0 +1,10 @@
+project_id = "cqbdyxhwnwavadfvcbob"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"

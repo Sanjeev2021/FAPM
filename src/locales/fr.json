@@ -1,0 +1,542 @@
+{
+  "landing": {
+    "nav": {
+      "login": "Se connecter",
+      "signup": "Créer mon compte"
+    },
+    "hero": {
+      "badge": "PLS, Horizon, CMA — ROI immédiat",
+      "title": "Un brief, une demande, une requête.",
+      "subtitle": "Des livrables prêts à envoyer.",
+      "tagline2": "En quelques secondes.",
+      "description": "Léo est un agent commercial intelligent, connecté à vos données — qui transforme chaque demande en recommandation stratégique et livrables clients instantanément.",
+      "cta": "Planifier une démo",
+      "demo": "Voir Léo en action",
+      "socialProof": "Résultats visibles dès la première semaine — zéro formation nécessaire"
+    },
+    "stats": {
+      "speed": "~30s",
+      "speedLabel": "de la demande au livrable complet",
+      "time": "12h",
+      "timeLabel": "récupérées par équipe chaque semaine",
+      "errors": "0",
+      "errorsLabel": "erreur de production sur les livrables"
+    },
+    "power": {
+      "eyebrow": "La puissance Léo",
+      "title": "Une IA qui analyse, vectorise, orchestre — sans intervention humaine.",
+      "description": "Léo analyse chaque demande en langage naturel, vectorise vos bases de données internes, orchestre les règles métier et génère instantanément recommandations stratégiques et livrables clients — sans intervention humaine. En quelques secondes."
+    },
+    "metrics": {
+      "velocity": "+x3",
+      "velocityTitle": "Vélocité commerciale",
+      "velocityDesc": "Traitez 3x plus de demandes avec les mêmes équipes. Chaque opportunité saisie en temps réel.",
+      "production": "-80%",
+      "productionTitle": "Temps de production",
+      "productionDesc": "Ce qui prend des heures prend quelques secondes. Vos équipes se concentrent sur ce qui génère du revenu.",
+      "data": "100%",
+      "dataTitle": "Données exploitées",
+      "dataDesc": "Vos bases métier, commerciales, produits — Léo les lit toutes, en temps réel, sans erreur.",
+      "roi": "Dès J+1",
+      "roiTitle": "ROI mesurable",
+      "roiDesc": "De la mise en place à 6 mois. Léo est opérationnel sur vos données dès la première semaine."
+    },
+    "howItWorks": {
+      "eyebrow": "Comment ça marche",
+      "title": "Connecté à vos données. 4 étapes. Quelques secondes.",
+      "description": "Vos bases marketing, commerciales, produits, médias, financières — Léo les ingère, les comprend et les orchestre pour produire.",
+      "step1Title": "Analyse la demande",
+      "step1Desc": "Brief, email, appel d'offres — Léo comprend l'intention en langage naturel.",
+      "step2Title": "Interroge vos bases",
+      "step2Desc": "Accès temps réel à vos données internes. Résultats fiables, toujours à jour.",
+      "step3Title": "Construit la stratégie",
+      "step3Desc": "Sélection, argumentation, structuration — une recommandation complète et cohérente.",
+      "step4Title": "Génère les livrables",
+      "step4Desc": "Decks, recommandations, documents — brandés à votre image, prêts à envoyer."
+    },
+    "quote": {
+      "text": "\"Faire les propositions, chercher dans les fichiers — c'est ce qui nous pèse. Ce que nous voulons, c'est être face à nos clients.\"",
+      "cite": "— Verbatim terrain, régie française"
+    },
+    "outputs": {
+      "eyebrow": "Les livrables",
+      "title": "Tout ce que Léo génère en une seule séquence.",
+      "description": "Chaque livrable respecte l'ADN de votre marque — brandé, structuré, directement transmissible.",
+      "item1": "Recommandation stratégique",
+      "item2": "Deck de présentation",
+      "item3": "Plan d'activation commercial",
+      "item4": "Email client personnalisé",
+      "item5": "Synthèse et chiffrage",
+      "item6": "Tout autre format métier"
+    },
+    "testimonial": {
+      "text": "\"Léo transforme la manière dont les équipes commerciales produisent leurs recommandations. C'est exactement le levier qu'attendaient les groupes médias pour libérer leur temps commercial.\"",
+      "name": "Adrien Lepage",
+      "title": "Managing Director, WPP — AI Media Advisor, FLAIX"
+    },
+    "board": {
+      "eyebrow": "Le conseil FLAIX",
+      "title": "Des experts au cœur de la transformation commerciale IA.",
+      "description": "FLAIX s'appuie sur un conseil d'experts issus des plus grands groupes médias, de la tech et de la presse.",
+      "member1Name": "Maxime Tallet",
+      "member1Role": "Fondateur & CEO",
+      "member1Org": "FLAIX",
+      "member1Tag": "Fondateur",
+      "member2Name": "Marlowe Recoing",
+      "member2Role": "CTO",
+      "member2Org": "FLAIX",
+      "member2Tag": "Tech & IA",
+      "member3Name": "Adrien Lepage",
+      "member3Role": "AI Media Advisor",
+      "member3Org": "Managing Director, WPP",
+      "member3Tag": "Advisor",
+      "member4Name": "Martin Clamart",
+      "member4Role": "Conseil éditorial & presse",
+      "member4Org": "Le Monde",
+      "member4Tag": "Advisor"
+    },
+    "clients": {
+      "pill1": "PLS Media",
+      "pill2": "Horizon",
+      "pill3": "CMA"
+    },
+    "cta": {
+      "title": "Voyez Léo sur un brief réel.",
+      "description": "20 minutes. Vos données. Vos livrables. ROI visible immédiatement.",
+      "button": "Planifier une démo gratuite"
+    },
+    "demo": {
+      "title": "Planifier une démo",
+      "description": "Laissez-nous vos coordonnées et nous vous contacterons rapidement pour organiser une démonstration personnalisée.",
+      "name": "Nom complet",
+      "email": "Email professionnel",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "message": "Message (optionnel)",
+      "messagePlaceholder": "Parlez-nous de vos besoins...",
+      "cancel": "Annuler",
+      "submit": "Envoyer la demande",
+      "contact": "Vous pouvez également nous contacter directement :",
+      "success": "Demande envoyée !",
+      "successDesc": "Nous vous contacterons très prochainement."
+    }
+  },
+  "auth": {
+    "back": "Retour",
+    "login": {
+      "title": "Connexion",
+      "description": "Connectez-vous pour accéder à votre tableau de bord"
+    },
+    "signup": {
+      "title": "Créer un compte",
+      "description": "Rejoignez FLAIX et automatisez vos devis média"
+    },
+    "fields": {
+      "name": "Nom complet",
+      "email": "Email",
+      "password": "Mot de passe",
+      "role": "Rôle"
+    },
+    "roles": {
+      "commercial": "Commercial",
+      "directeur": "Directeur",
+      "admin": "Administrateur"
+    },
+    "buttons": {
+      "login": "Se connecter",
+      "signup": "Créer mon compte",
+      "loading": "Chargement..."
+    },
+    "links": {
+      "noAccount": "Pas encore de compte ?",
+      "hasAccount": "Déjà un compte ?",
+      "createAccount": "Créer un compte",
+      "signIn": "Se connecter"
+    },
+    "errors": {
+      "loginTitle": "Erreur de connexion",
+      "loginDesc": "Email ou mot de passe incorrect",
+      "signupTitle": "Erreur d'inscription",
+      "signupDesc": "Impossible de créer le compte",
+      "genericTitle": "Erreur",
+      "genericDesc": "Une erreur inattendue s'est produite. Vérifiez votre connexion internet."
+    },
+    "success": {
+      "signupTitle": "Compte créé avec succès",
+      "signupDesc": "Vous pouvez maintenant vous connecter",
+      "loginTitle": "Connexion réussie",
+      "loginDesc": "Bienvenue sur FLAIX"
+    }
+  },
+  "dashboard": {
+    "welcome": "Bienvenue sur votre tableau de bord,",
+    "connectedAs": "Connecté en tant que",
+    "hero": {
+      "title1": "Créer une nouvelle",
+      "title2": "recommandation",
+      "description": "Générez un plan média optimisé par l'IA en quelques minutes",
+      "button": "Nouveau brief"
+    },
+    "metrics": {
+      "title": "Métriques de performance",
+      "briefs": "Briefs automatisés",
+      "timeSaved": "Temps gagné / brief",
+      "usage": "Taux d'utilisation IA",
+      "budget": "Valeur totale des devis"
+    },
+    "recent": {
+      "title": "Recommandations récentes",
+      "description": "Historique des plans média générés par FLAIX",
+      "viewAll": "Voir tout l'historique",
+      "empty": {
+        "title": "Aucune recommandation",
+        "description": "Commencez par créer votre première recommandation IA pour générer des plans média optimisés",
+        "button": "Créer ma première recommandation"
+      },
+      "loading": "Chargement..."
+    },
+    "channels": {
+      "web": "Digital",
+      "print": "Print",
+      "newsletter": "Newsletter",
+      "mixed": "Multi-canal"
+    },
+    "settings": {
+      "title1": "Paramètres du",
+      "title2": "compte",
+      "description": "Gérez votre identité et les informations de votre entreprise",
+      "identity": {
+        "title": "Identité & Branding",
+        "logo": "Logo de l'entreprise",
+        "logoFormat": "PNG ou SVG, max 2MB",
+        "company": "Nom de la régie / entreprise",
+        "contact": "Contact principal",
+        "email": "Email",
+        "phone": "Téléphone"
+      },
+      "admin": {
+        "title": "Informations administratives",
+        "terms": "CGV / Mentions légales",
+        "upload": "Télécharger PDF",
+        "address": "Adresse de facturation",
+        "language": "Langue par défaut",
+        "timezone": "Fuseau horaire"
+      },
+      "actions": {
+        "save": "Sauvegarder les paramètres",
+        "logout": "Déconnexion",
+        "version": "Version app : v1.0.0 – Octobre 2025"
+      },
+      "success": {
+        "title": "Paramètres sauvegardés",
+        "description": "Vos modifications ont été enregistrées avec succès"
+      }
+    },
+    "logout": {
+      "title": "Déconnexion réussie",
+      "description": "À bientôt sur FLAIX"
+    }
+  },
+  "createProject": {
+    "title": "Saisir un",
+    "titleHighlight": "nouveau brief",
+    "description": "Décrivez votre besoin et laissez LÉO générer vos recommandations",
+    "tabs": {
+      "prompt": "Prompt libre",
+      "form": "Formulaire"
+    },
+    "prompt": {
+      "title": "Décrivez votre brief",
+      "description": "Écrivez ou collez votre brief en texte libre. LÉO l'analysera pour générer des recommandations.",
+      "placeholder": "Exemple : Client XYZ souhaite lancer une campagne pour promouvoir son nouveau produit auprès des 25-45 ans, CSP+. Budget : 50 000€. Objectif : générer de la notoriété et du trafic web. Canaux envisagés : digital + presse.",
+      "tip": "Plus votre brief est détaillé, plus les recommandations seront précises.",
+      "info": "Les informations sont traitées en temps réel par notre IA connectée avec vos données."
+    },
+    "form": {
+      "title": "Formulaire structuré",
+      "description": "Remplissez les champs pour créer votre brief de manière guidée.",
+      "clientName": "Nom du client",
+      "campaignName": "Nom de la campagne",
+      "objective": "Objectif de la campagne",
+      "target": "Cibles principales",
+      "period": "Période",
+      "channel": "Canaux envisagés",
+      "budget": "Budget (€)",
+      "channels": {
+        "web": "Web / Digital",
+        "print": "Print / Presse",
+        "newsletter": "Newsletter",
+        "mixed": "Mix média"
+      }
+    },
+    "button": "Générer la recommandation via IA",
+    "buttonLoading": "Génération en cours..."
+  },
+  "common": {
+    "excel": "Excel en cours de génération",
+    "powerpoint": "PowerPoint en cours de génération",
+    "email": "Email en cours de préparation",
+    "min": "min"
+  },
+  "briefReview": {
+    "title": "vous propose deux",
+    "titleHighlight": "angles stratégiques",
+    "description": "Sélectionnez la stratégie qui correspond le mieux à vos objectifs, ou affinez selon votre expertise",
+    "feedback": {
+      "title": "Affiner selon votre expertise",
+      "description": "L'IA et l'intelligence humaine : partagez vos insights ou demandez des ajustements spécifiques",
+      "question": "Cette stratégie vous convient ?",
+      "yes": "Oui",
+      "adjust": "Ajustements nécessaires",
+      "adjustLabel": "Vos recommandations d'ajustement",
+      "adjustPlaceholder": "Ex: Augmenter la part de social media à 40%, privilégier Instagram Stories, ajouter du retargeting...",
+      "tip": "LÉO prendra en compte vos suggestions pour affiner la stratégie"
+    },
+    "strategy": {
+      "recommended": "Recommandé",
+      "pros": "Avantages",
+      "cons": "Points d'attention"
+    },
+    "strategy1": {
+      "name": "Approche Multi-Canal Équilibrée",
+      "description": "Stratégie optimale pour maximiser la portée tout en maintenant un CPM compétitif",
+      "pros1": "Couverture large de votre cible (85% reach)",
+      "pros2": "Mix optimal Display + Social + Search",
+      "pros3": "ROI prévisible basé sur données secteur",
+      "cons1": "Nécessite gestion multi-plateformes",
+      "cons2": "Budget réparti sur plusieurs canaux"
+    },
+    "strategy2": {
+      "name": "Focus Social & Engagement",
+      "description": "Concentration sur les réseaux sociaux pour maximiser l'engagement et le branding",
+      "pros1": "Fort taux d'engagement (4-6%)",
+      "pros2": "Idéal pour notoriété de marque",
+      "pros3": "Ciblage précis par intérêts",
+      "cons1": "Portée limitée à l'audience social",
+      "cons2": "Moins d'impact sur conversions directes"
+    },
+    "table": {
+      "title": "Supports média sélectionnés -",
+      "description": "Répartition budgétaire et KPIs prévisionnels",
+      "channel": "Canal",
+      "support": "Support",
+      "format": "Format",
+      "audience": "Audience",
+      "impressions": "Impressions",
+      "budget": "Budget",
+      "percentage": "%",
+      "total": "TOTAL"
+    },
+    "summary": {
+      "title": "Synthèse",
+      "totalBudget": "Budget total",
+      "supports": "Nombre de supports",
+      "channels": "Canaux activés"
+    },
+    "actions": {
+      "generate": "Générer la recommandation via IA",
+      "tip": "Les informations sont traitées en temps réel par notre IA connectée avec vos données.",
+      "adjust": "Ajuster manuellement"
+    }
+  },
+  "chat": {
+    "emptyState": {
+      "title": "Bonjour !",
+      "description": "Votre assistant média. Décrivez-moi le brief de votre client et je vous trouverai les supports adaptés."
+    },
+    "placeholder": "Décrivez votre besoin...",
+    "suggestions": {
+      "s1": "Voici le brief de mon client : il cible les pharmaciens en Île-de-France",
+      "s2": "Je cherche des supports pour toucher les médecins généralistes",
+      "s3": "J'ai besoin de supports print pour une campagne dentaire",
+      "s4": "Mon client veut toucher les kinésithérapeutes en région PACA"
+    },
+    "shimmer": {
+      "ragSearch": "Je recherche « {{query}} »…",
+      "ragSearchDefault": "Je recherche…",
+      "refineSelection": "Mise à jour de la sélection…",
+      "calculatePricing": "Calcul des tarifs…",
+      "adjustSupport": "Ajustement en cours…",
+      "collectMetadata": "Vérification des métadonnées…",
+      "generateExcel": "Préparation du devis…",
+      "generatePpt": "Préparation de la présentation…",
+      "draftEmail": "Rédaction de l'email…",
+      "strategicRecommendation": "Construction de la recommandation…",
+      "default": "Traitement en cours…",
+      "thinking": "Réflexion en cours…",
+      "loading": "Chargement de la conversation..."
+    },
+    "toolResult": "Résultats de recherche",
+    "actions": {
+      "copy": "Copier",
+      "copyLabel": "Copier la réponse",
+      "regenerate": "Régénérer",
+      "regenerateLabel": "Régénérer la réponse"
+    },
+    "sidebar": {
+      "newBrief": "Nouveau brief",
+      "loading": "Chargement...",
+      "noConversations": "Aucune conversation",
+      "noConversationsDesc": "Commencez un nouveau brief pour démarrer."
+    },
+    "siteHeader": {
+      "newConversation": "Nouvelle conversation"
+    },
+    "workingPanel": {
+      "title": "Sélection",
+      "emptyState": "Aucun support sélectionné — commencez par une recherche",
+      "removed": "{{name}} retiré",
+      "removeFailed": "Impossible de retirer {{name}}",
+      "reAdded": "{{name}} remis dans la sélection",
+      "reAddFailed": "Impossible de remettre le support"
+    },
+    "deliverables": {
+      "title": "Livrables récents",
+      "downloadExcel": "Télécharger le devis",
+      "downloadPpt": "Télécharger la présentation",
+      "openConversation": "Ouvrir la conversation",
+      "downloadError": "Impossible de télécharger le fichier",
+      "empty": "Aucun livrable récent",
+      "excel": "Devis Excel",
+      "ppt": "Présentation PPT",
+      "email": "Email",
+      "generate": "Générer",
+      "preview": "Aperçu",
+      "download": "Télécharger",
+      "regenerate": "Régénérer",
+      "retry": "Réessayer",
+      "processing": "En cours…",
+      "failed": "Échec",
+      "copyEmail": "Copier l'email",
+      "copied": "Email copié !",
+      "promptExcel": "Génère le devis Excel avec les supports sélectionnés.",
+      "promptPpt": "Génère la présentation PowerPoint avec les supports sélectionnés.",
+      "promptEmail": "Rédige l'email d'accompagnement pour le client."
+    },
+    "tableSummary": {
+      "supports": "{{count}} support",
+      "supports_plural": "{{count}} supports",
+      "netTotal": "Net total : {{total}}"
+    },
+    "welcome": {
+      "morning1": "Bonjour {{firstName}}, prêt à lancer un brief ?",
+      "morning2": "Salut {{firstName}}, qu'est-ce qu'on prépare ce matin ?",
+      "morning3": "Hello {{firstName}}, un nouveau projet en vue ?",
+      "afternoon1": "{{firstName}}, quel brief pour cet après-midi ?",
+      "afternoon2": "Salut {{firstName}}, on avance sur quoi ?",
+      "afternoon3": "{{firstName}}, un nouveau plan média à construire ?",
+      "evening1": "Bonsoir {{firstName}}, encore un brief ce soir ?",
+      "evening2": "{{firstName}}, une dernière reco avant de partir ?",
+      "evening3": "Salut {{firstName}}, on finit la journée en beauté ?",
+      "lateNight1": "{{firstName}}, qu'est-ce qui te tient éveillé ?",
+      "lateNight2": "Toujours là {{firstName}} ? Allez, un dernier brief.",
+      "lateNight3": "{{firstName}}, les meilleures idées viennent la nuit.",
+      "org": {
+        "morning1": "Bonjour {{orgName}}, quelle demande souhaitez-vous confier à Léo ?",
+        "morning2": "Bonjour {{orgName}}, Léo est prêt — que cherchez-vous aujourd'hui ?",
+        "morning3": "Bonjour {{orgName}}, par quoi commençons-nous ?",
+        "afternoon1": "{{orgName}}, quel brief pour cet après-midi ?",
+        "afternoon2": "{{orgName}}, on avance sur quel projet ?",
+        "afternoon3": "{{orgName}}, un nouveau plan média à construire ?",
+        "evening1": "Bonsoir {{orgName}}, encore un brief ce soir ?",
+        "evening2": "{{orgName}}, une dernière reco avant de partir ?",
+        "evening3": "Bonsoir {{orgName}}, Léo est disponible.",
+        "lateNight1": "{{orgName}}, qu'est-ce qui vous tient éveillé ?",
+        "lateNight2": "Toujours là {{orgName}} ? Allez, un dernier brief.",
+        "lateNight3": "{{orgName}}, les meilleures idées viennent la nuit."
+      },
+      "helperText": "Tu peux commencer par me donner ton brief client ou me demander de chercher des supports.",
+      "recentExports": "Exports récents",
+      "download": "Télécharger",
+      "openChat": "Ouvrir la conversation"
+    }
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "history": "Historique",
+    "settings": "Paramètres",
+    "logout": "Déconnexion"
+  },
+  "results": {
+    "badge": "Documents prêts",
+    "title": "Votre",
+    "titleHighlight": "recommandation",
+    "titleEnd": "est prête",
+    "subtitle": "Stratégie validée, documents générés et prêts à télécharger",
+    "strategy": {
+      "defaultTitle": "Stratégie média optimisée",
+      "defaultRecommendation": "Cette approche garantit un ROI optimal tout en maximisant la portée et l'engagement."
+    },
+    "focus": {
+      "label": "FOCUS de la campagne :",
+      "title": "Stratégie et argumentaire commercial",
+      "intro": "Cette stratégie a été conçue par LÉO en analysant votre brief, votre cible et les meilleures pratiques du secteur.",
+      "keyPoints": "Points clés de la recommandation",
+      "keyPoint1": "Couverture maximale de votre audience cible avec {{channels}} canaux complémentaires",
+      "keyPoint2": "Budget optimisé selon les tarifs actuels du marché et les performances sectorielles",
+      "keyPoint3": "Mix média équilibré entre notoriété, considération et conversion",
+      "keyPoint4": "Approche data-driven basée sur les historiques de campagnes similaires",
+      "proposition": "Proposition commerciale"
+    },
+    "budget": {
+      "title": "Récapitulatif budgétaire",
+      "description": "Vue d'ensemble de la répartition média",
+      "total": "Budget total",
+      "impressions": "Impressions estimées",
+      "supports": "Supports activés"
+    },
+    "preview": {
+      "title": "Aperçu du plan média",
+      "description": "Détail des recommandations incluses dans les documents"
+    },
+    "generation": {
+      "success": "Génération réussie",
+      "message": "Documents créés avec succès et prêts à être présentés à votre client."
+    },
+    "downloads": {
+      "title": "Téléchargements",
+      "description": "Documents prêts à l'emploi",
+      "excel": {
+        "title": "Devis Excel",
+        "subtitle": "Tableaux détaillés",
+        "ready": "Prêt",
+        "download": "Télécharger Excel",
+        "downloading": "Téléchargement...",
+        "success": "Téléchargement réussi",
+        "successDesc": "Le fichier Excel a été téléchargé avec succès."
+      },
+      "powerpoint": {
+        "title": "Présentation PowerPoint",
+        "subtitle": "Slides professionnels",
+        "ready": "Prêt",
+        "download": "Télécharger PowerPoint",
+        "downloading": "Téléchargement...",
+        "success": "Téléchargement réussi",
+        "successDesc": "La présentation PowerPoint a été téléchargée avec succès."
+      },
+      "email": {
+        "title": "Envoyer par email",
+        "subtitle": "Avec pièces jointes",
+        "ready": "Prêt",
+        "send": "Envoyer la recommandation",
+        "sending": "Envoi...",
+        "success": "Email préparé",
+        "successDesc": "Votre client email s'est ouvert avec la recommandation."
+      }
+    },
+    "actions": {
+      "history": "Voir l'historique",
+      "newBrief": "Nouveau brief"
+    },
+    "table": {
+      "channel": "Canal",
+      "support": "Support",
+      "format": "Format",
+      "audience": "Audience",
+      "impressions": "Impressions",
+      "budget": "Budget",
+      "percentage": "%",
+      "total": "TOTAL"
+    }
+  }
+}

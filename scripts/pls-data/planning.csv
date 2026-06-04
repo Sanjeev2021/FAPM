@@ -1,0 +1,6 @@
+variant_id,publication_date,booking_deadline,material_deadline,status,slots_total,slots_booked,periodicity,notes
+le_moniteur_dentaire_2025_print_full_page,2025-03-15,2025-02-15,2025-02-28,available,4,1,monthly,Édition spéciale implantologie
+le_moniteur_dentaire_2025_print_full_page,2025-04-15,2025-03-15,2025-03-30,available,4,0,monthly,
+le_moniteur_dentaire_2025_print_half_page,2025-03-15,2025-02-15,2025-02-28,limited,8,6,monthly,Places limitées
+le_moniteur_dentaire_2025_web_banner_728x90,2025-03-01,2025-02-25,2025-02-28,available,,,monthly,Campagne renouvelable mensuellement
+le_moniteur_dentaire_2025_email_sponsored,2025-03-10,2025-03-03,2025-03-07,available,1,0,monthly,Newsletter hebdomadaire

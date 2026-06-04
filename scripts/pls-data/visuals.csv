@@ -1,0 +1,8 @@
+variant_id,visual_type,title,url,cdn_provider,file_format,dimensions,metadata
+le_moniteur_dentaire_2025_print_full_page,logo,Logo Le Moniteur Dentaire,https://cdn.flaix.ai/pls/logo-moniteur-dentaire.png,flaix,png,500x200px,"{""alt"":""Logo Le Moniteur Dentaire""}"
+le_moniteur_dentaire_2025_print_full_page,template,Template Page Entière Print,https://cdn.flaix.ai/pls/template-print-full-page.pdf,flaix,pdf,210x297mm,"{""bleed"":""3mm"",""safe_zone"":""5mm""}"
+le_moniteur_dentaire_2025_print_full_page,example,Exemple Publicité Page Entière,https://cdn.flaix.ai/pls/example-print-ad.jpg,flaix,jpg,210x297mm,"{""year"":2024}"
+le_moniteur_dentaire_2025_web_banner_728x90,template,Template Bannière Web 728x90,https://cdn.flaix.ai/pls/template-web-728x90.psd,flaix,psd,728x90px,"{""layers"":true}"
+le_moniteur_dentaire_2025_web_banner_728x90,example,Exemple Bannière Animée,https://cdn.flaix.ai/pls/example-banner-animated.gif,flaix,gif,728x90px,"{""animated"":true,""duration"":""5s""}"
+le_moniteur_dentaire_2025_email_sponsored,template,Template Email HTML,https://cdn.flaix.ai/pls/template-email.html,flaix,html,600px,"{""responsive"":true}"
+le_moniteur_dentaire_2025_social_post,example,Exemple Post Instagram,https://cdn.flaix.ai/pls/example-instagram-post.jpg,flaix,jpg,1080x1080px,"{""platform"":""Instagram""}"

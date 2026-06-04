@@ -1,0 +1,7 @@
+variant_id,contact_type,name,email,phone,role,notes
+le_moniteur_dentaire_2025_print_full_page,commercial,Sophie Martin,s.martin@moniteur-dentaire.fr,+33 1 45 67 89 01,Responsable Publicité Print,Disponible du lundi au vendredi 9h-18h
+le_moniteur_dentaire_2025_print_half_page,commercial,Sophie Martin,s.martin@moniteur-dentaire.fr,+33 1 45 67 89 01,Responsable Publicité Print,Disponible du lundi au vendredi 9h-18h
+le_moniteur_dentaire_2025_web_banner_728x90,commercial,Thomas Dubois,t.dubois@moniteur-dentaire.fr,+33 1 45 67 89 02,Responsable Digital,Spécialiste campagnes web
+le_moniteur_dentaire_2025_email_sponsored,commercial,Thomas Dubois,t.dubois@moniteur-dentaire.fr,+33 1 45 67 89 02,Responsable Digital,Spécialiste emailing
+le_moniteur_dentaire_2025_social_post,commercial,Claire Bernard,c.bernard@moniteur-dentaire.fr,+33 1 45 67 89 03,Social Media Manager,Gestion réseaux sociaux
+le_moniteur_dentaire_2025_print_full_page,technical,Service Prépresse,prepresse@moniteur-dentaire.fr,+33 1 45 67 89 10,Équipe Technique,Pour questions techniques fichiers print
