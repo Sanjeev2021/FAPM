@@ -2,8 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict Fdgm6MIrpNLe373tumHTQJENyfywDgl4MuLTAFLPs8I4XhOIrkbccrW7oX900fp
-
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 18.2
 
@@ -23,8 +21,11 @@ SET row_security = off;
 -- Name: public; Type: SCHEMA; Schema: -; Owner: -
 --
 
-CREATE SCHEMA public;
+CREATE SCHEMA IF NOT EXISTS public;
 
+CREATE EXTENSION IF NOT EXISTS vector WITH SCHEMA public;
+CREATE EXTENSION IF NOT EXISTS pg_trgm WITH SCHEMA public;
+CREATE EXTENSION IF NOT EXISTS unaccent WITH SCHEMA public;
 
 --
 -- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: -
@@ -3549,6 +3550,4 @@ ALTER TABLE public.todos ENABLE ROW LEVEL SECURITY;
 --
 -- PostgreSQL database dump complete
 --
-
-\unrestrict Fdgm6MIrpNLe373tumHTQJENyfywDgl4MuLTAFLPs8I4XhOIrkbccrW7oX900fp
 

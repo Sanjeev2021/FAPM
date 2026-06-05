@@ -143,9 +143,12 @@ export function initializeLineItem(support: CampaignSupport): DevisLineItem {
     case 'Web': {
       quantite = 1;
       const impressions = sd.visites_par_mois_web ?? 0;
-      cpmBrut = impressions > 0 && effectiveBrut > 0
-        ? (effectiveBrut / (impressions / 1000))
-        : null;
+      if (impressions > 0 && effectiveBrut > 0) {
+        cpmBrut = effectiveBrut / (impressions / 1000);
+      } else if (sd.type_tarif === 'cpm') {
+        // CPM item but no impressions data yet — default to 0 so the cell stays editable
+        cpmBrut = 0;
+      }
       // CPM: _unit_price is the CPM rate (€ per 1000 impressions).
       // Forfait: _unit_price is the flat amount.
       unitPrice = sd.type_tarif === 'cpm' ? (cpmBrut ?? 0) : effectiveBrut;

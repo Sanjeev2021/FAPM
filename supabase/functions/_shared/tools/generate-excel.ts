@@ -11,14 +11,15 @@ export const generateExcelOutput = z.object({
   toastMessage: z.string(),
 });
 
-const REQUIRED_METADATA = ['agence', 'annonceur'];
+// Only annonceur is required — agence is optional (direct sales have no intermediary agency)
+const REQUIRED_METADATA = ['annonceur'];
 
 export async function executeGenerateExcel(
   _input: z.infer<typeof generateExcelInput>,
   clients: { userClient: SupabaseClient; adminClient: SupabaseClient },
   context: { conversationId: string; orgId: string }
 ): Promise<z.infer<typeof generateExcelOutput>> {
-  const { conversationId, orgId } = context;
+  const { conversationId } = context;
 
   // Check selected supports exist
   const { count, error: countError } = await clients.adminClient
@@ -41,23 +42,6 @@ export async function executeGenerateExcel(
 
   if (convError) throw new Error(`Conversation fetch failed: ${convError.message}`);
   const metadata = (conv?.metadata as Record<string, string>) ?? {};
-
-  // Auto-fill agence from organization name if not already set
-  if (!metadata.agence) {
-    const { data: org } = await clients.adminClient
-      .from('organizations')
-      .select('name')
-      .eq('id', orgId)
-      .single();
-    if (org?.name) {
-      metadata.agence = org.name;
-      // Persist so it doesn't need to be fetched again
-      await clients.adminClient
-        .from('leo_conversations')
-        .update({ metadata: { ...metadata } })
-        .eq('id', conversationId);
-    }
-  }
 
   const missing = REQUIRED_METADATA.filter(f => !metadata[f]);
 

@@ -8,7 +8,8 @@ export const draftEmailOutput = z.object({
   email_body_html: z.string().optional(),
   campaign_summary: z.object({
     annonceur: z.string(),
-    agence: z.string(),
+    regie: z.string(),   // issuing org (PLS) — used for signature
+    agence: z.string(),  // intermediary buying agency (Havas, OMD…) — empty for direct sales
     campagne: z.string().nullable(),
     contact_nom: z.string().nullable(),
     contact_email: z.string().nullable(),
@@ -42,7 +43,8 @@ export const draftEmailOutput = z.object({
   toastMessage: z.string(),
 });
 
-const REQUIRED_METADATA = ['agence', 'annonceur'];
+// agence is optional — direct sales have no intermediary agency
+const REQUIRED_METADATA = ['annonceur'];
 const AGENCY_DISCOUNT = 0.15;
 
 function parseTarifText(tarif: string | null): number {
@@ -67,7 +69,7 @@ export async function executeDraftEmail(
   clients: { userClient: SupabaseClient; adminClient: SupabaseClient },
   context: { conversationId: string; orgId: string }
 ): Promise<z.infer<typeof draftEmailOutput>> {
-  const { conversationId } = context;
+  const { conversationId, orgId } = context;
 
   // Check selected supports exist
   const { data: supports, error: supportsError } = await clients.adminClient
@@ -91,6 +93,14 @@ export async function executeDraftEmail(
   if (convError) throw new Error(`Conversation fetch failed: ${convError.message}`);
   const metadata = (conv?.metadata as Record<string, string>) ?? {};
   const missing = REQUIRED_METADATA.filter(f => !metadata[f]);
+
+  // Fetch the régie (org) name — this is the document issuer, not the buying agency
+  const { data: org } = await clients.adminClient
+    .from('organizations')
+    .select('name')
+    .eq('id', orgId)
+    .single();
+  const regieName = org?.name || 'PLS';
 
   if (missing.length > 0) {
     return { status: 'metadata_required', missing_fields: missing, toastMessage: 'Métadonnées requises avant de rédiger l\'email.' };
@@ -147,6 +157,7 @@ export async function executeDraftEmail(
 
   const campaignSummary = {
     annonceur: metadata.annonceur || '',
+    regie: regieName,
     agence: metadata.agence || '',
     campagne: metadata.campagne || null,
     contact_nom: metadata.contact_nom || null,
@@ -188,6 +199,7 @@ function formatEuro(n: number): string {
 
 function buildEmailHtml(summary: {
   annonceur: string;
+  regie: string;
   agence: string;
   campagne: string | null;
   contact_nom: string | null;
@@ -205,6 +217,11 @@ function buildEmailHtml(summary: {
   const campaignLine = summary.campagne
     ? ` — campagne &laquo;&nbsp;${summary.campagne}&nbsp;&raquo;`
     : '';
+
+  // When an intermediary agency is named, address the email to them on behalf of the advertiser
+  const forLine = summary.agence
+    ? `pour <strong>${summary.agence}</strong> / <strong>${summary.annonceur}</strong>`
+    : `pour <strong>${summary.annonceur}</strong>`;
 
   const canalRows = [
     { label: 'Print', count: summary.supports_by_canal.Print },
@@ -225,7 +242,7 @@ function buildEmailHtml(summary: {
 
   return `<div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;color:#1f2937;">
   <p style="margin:0 0 16px;font-size:14px;">${greeting}</p>
-  <p style="margin:0 0 16px;font-size:14px;">Veuillez trouver ci-joint notre proposition media pour <strong>${summary.annonceur}</strong>${campaignLine}.</p>
+  <p style="margin:0 0 16px;font-size:14px;">Veuillez trouver ci-joint notre proposition media ${forLine}${campaignLine}.</p>
   <h3 style="margin:24px 0 12px;font-size:15px;color:#374151;">Récapitulatif</h3>
   <table style="border-collapse:collapse;width:100%;margin-bottom:8px;">
     <thead>
@@ -240,6 +257,6 @@ function buildEmailHtml(summary: {
   </table>
   <p style="margin:8px 0;font-size:13px;color:#6b7280;">Total brut : ${formatEuro(summary.total_brut)} — Total net : <strong>${formatEuro(summary.total_net)}</strong></p>
   ${attachmentsLine}
-  <p style="margin:24px 0 0;font-size:14px;">Cordialement,<br/>${summary.agence}</p>
+  <p style="margin:24px 0 0;font-size:14px;">Cordialement,<br/>L'équipe ${summary.regie}</p>
 </div>`;
 }

@@ -2,6 +2,10 @@
 -- These functions already exist in production but need to be in migrations
 -- so that new deployments have them.
 
+-- join_code column exists in production but was missing from migrations
+ALTER TABLE public.organizations
+  ADD COLUMN IF NOT EXISTS join_code TEXT UNIQUE;
+
 CREATE OR REPLACE FUNCTION public.lookup_org_by_code(p_join_code text)
  RETURNS jsonb
  LANGUAGE sql

@@ -3,7 +3,7 @@ import type { SupabaseClient } from 'npm:@supabase/supabase-js@2';
 
 export const collectMetadataInput = z.object({
   mode: z.enum(['full', 'quick']).default('full').describe('Use "quick" when updating 1-2 fields mid-conversation. Use "full" for initial complete metadata collection.'),
-  agence: z.string().optional().describe('Agency name (e.g. "Havas Media")'),
+  agence: z.string().optional().describe('Intermediary media buying agency (optional — e.g. "Havas Media", "OMD", "Publicis Media"). Leave empty for direct advertiser sales.'),
   annonceur: z.string().optional().describe('Advertiser / client name (e.g. "AMEX", "CNAM")'),
   campagne: z.string().optional().describe('Campaign name or reference (e.g. "Fil rouge annuel B2B")'),
   contact_nom: z.string().optional().describe('Contact person full name'),
@@ -26,7 +26,8 @@ export const collectMetadataOutput = z.object({
   toastMessage: z.string().optional(),
 });
 
-const REQUIRED_FIELDS = ['agence', 'annonceur'];
+// agence is optional (direct sales have no media-buying intermediary)
+const REQUIRED_FIELDS = ['annonceur'];
 
 export async function executeCollectMetadata(
   input: z.infer<typeof collectMetadataInput>,

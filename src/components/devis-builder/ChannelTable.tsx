@@ -302,9 +302,9 @@ function WebRow({ item, onEditField, onRemove, locked, onToggleLock }: {
       </TableCell>
       {/* CPM rate: editable for CPM (drives price); informational for Forfait */}
       <TableCell className="py-2 text-right">
-        {isCpm && item.cpm_brut != null ? (
+        {isCpm ? (
           <EditableCell
-            value={item.cpm_brut}
+            value={item.cpm_brut ?? 0}
             onCommit={(v) => onEditField(item.id, 'cpm_rate', Math.max(0, v))}
             format="currency"
             step={1}
