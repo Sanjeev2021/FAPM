@@ -91,19 +91,43 @@ export async function executeRefineSelection(
     if (!canal) throw new Error('canal is required for filter mode');
     console.log(`[refine-selection] filter mode: keep canal=${canal} conversationId=${conversationId}`);
 
+    // Guard: count how many supports of the target canal exist in this session (any state).
+    // If none exist, the working set would be wiped entirely — abort and tell the AI to
+    // search for that canal first using refineSelection add mode.
+    const { count: canalTotal, error: countError } = await clients.adminClient
+      .from('campaign_supports')
+      .select('id', { count: 'exact', head: true })
+      .eq('conversation_id', conversationId)
+      .filter('support_data->>canal', 'eq', canal);
+    if (countError) {
+      console.error(`[refine-selection] filter count error:`, countError);
+      throw new Error(`Filter count failed: ${countError.message}`);
+    }
+    if (!canalTotal || canalTotal === 0) {
+      console.warn(`[refine-selection] filter aborted: no ${canal} supports exist in session ${conversationId}`);
+      return {
+        mode,
+        affectedCount: 0,
+        toastMessage: `no_${canal.toLowerCase()}_supports`,
+      };
+    }
+
     // Step 1: Reactivate ALL supports of the target canal, regardless of current is_selected.
     // This is essential for canal-switching (e.g. filter→Web then filter→Print): the Print
     // rows were deactivated by the previous filter and must be restored before we can apply
     // the new filter, otherwise the working set ends up completely empty.
-    const { error: reactivateError } = await clients.adminClient
+    const { data: reactivated, error: reactivateError } = await clients.adminClient
       .from('campaign_supports')
       .update({ is_selected: true })
       .eq('conversation_id', conversationId)
-      .filter('support_data->>canal', 'eq', canal);
+      .filter('support_data->>canal', 'eq', canal)
+      .select('id');
     if (reactivateError) {
       console.error(`[refine-selection] filter reactivate error:`, reactivateError);
       throw new Error(`Filter reactivate failed: ${reactivateError.message}`);
     }
+    const reactivatedCount = reactivated?.length ?? 0;
+    console.log(`[refine-selection] filter reactivated ${reactivatedCount} ${canal} supports`);
 
     // Step 2: Deactivate ALL supports of other canals (unconditional — we own the full state).
     const { data, error } = await clients.adminClient
@@ -119,8 +143,8 @@ export async function executeRefineSelection(
     const count = data?.length ?? 0;
     return {
       mode,
-      affectedCount: count,
-      toastMessage: `Filtré sur ${canal}`,
+      affectedCount: reactivatedCount,
+      toastMessage: `Filtré sur ${canal} — ${reactivatedCount} support${reactivatedCount > 1 ? 's' : ''} ${canal} actif${reactivatedCount > 1 ? 's' : ''}`,
     };
   }
 

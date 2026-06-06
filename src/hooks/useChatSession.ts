@@ -15,6 +15,12 @@ export function useChatSession() {
   const conversationIdRef = useRef(conversationId);
   conversationIdRef.current = conversationId;
 
+  // Keep a ref to session so headers() always reads the latest token without
+  // causing transport to be recreated on every token refresh. Recreating the
+  // transport mid-stream causes useChat to interrupt and discard the response.
+  const sessionRef = useRef(session);
+  sessionRef.current = session;
+
   const customFetch: typeof globalThis.fetch = useCallback(
     async (input, init) => {
       let response = await globalThis.fetch(input, init);
@@ -46,15 +52,15 @@ export function useChatSession() {
           const h: Record<string, string> = {
             apikey: SUPABASE_ANON_KEY,
           };
-          if (session?.access_token) {
-            h.Authorization = `Bearer ${session.access_token}`;
+          if (sessionRef.current?.access_token) {
+            h.Authorization = `Bearer ${sessionRef.current.access_token}`;
           }
           return h;
         },
         body: () => ({ conversationId: conversationIdRef.current }),
         fetch: customFetch,
       }),
-    [session?.access_token, customFetch]
+    [customFetch]
   );
 
   const chat = useChat({

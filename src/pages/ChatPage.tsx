@@ -98,14 +98,15 @@ export default function ChatPage() {
   // Restore conversation from URL on mount
   const [pendingConversationId, setPendingConversationId] = useState<string | undefined>(urlConversationId);
 
-  // Sync URL when conversationId changes (new conversation created or sidebar click)
+  // Sync URL when a new conversation is created during streaming.
+  // Use replaceState instead of navigate so React Router never sees a route change
+  // mid-stream (navigating from /chat to /chat/:id would cause a route rematch that
+  // can interrupt useChat's in-progress stream and blank the screen).
   useEffect(() => {
-    if (conversationId && conversationId !== urlConversationId) {
-      navigate(`/chat/${conversationId}`, { replace: true });
-    } else if (!conversationId && urlConversationId) {
-      navigate('/chat', { replace: true });
+    if (conversationId && !window.location.pathname.endsWith(`/${conversationId}`)) {
+      window.history.replaceState(null, '', `/chat/${conversationId}`);
     }
-  }, [conversationId, urlConversationId, navigate]);
+  }, [conversationId]);
   const { data: restoredMessages, isLoading: isRestoring, error: restoreError } = useConversationMessages(pendingConversationId);
 
   // When restored messages arrive (including empty []), hydrate the chat.
@@ -445,6 +446,53 @@ function MessageBlock({
       ) {
         invalidatedToolCallIds.current.add(p.toolCallId);
         didInvalidate = true;
+
+        // For refineSelection filter mode: apply an optimistic cache update immediately
+        // so the Devis Builder panel never flashes empty while the background refetch runs.
+        // Canal-switching (filter→Web then filter→Print) leaves the target-canal rows as
+        // is_selected=false in DB; the server reactivates them, but the client sees the
+        // stale cache first. Splitting the cached data by canal here prevents that blank.
+        if (getToolName(p) === "refineSelection") {
+          const input = p.input as { mode?: string; canal?: string };
+          const output = p.output as { toastMessage?: string } | undefined;
+          const NO_SUPPORTS = ["no_print_supports", "no_web_supports", "no_nl_supports"];
+          const isNoSupports = NO_SUPPORTS.some(prefix =>
+            output?.toastMessage?.startsWith(prefix)
+          );
+          if (input.mode === "filter" && input.canal && !isNoSupports) {
+            const targetCanal = input.canal;
+            type SupportEntry = { support_data: { canal?: string }; is_selected: boolean };
+            const selected =
+              queryClient.getQueryData<SupportEntry[]>([
+                "campaign_supports",
+                conversationId,
+              ]) ?? [];
+            const rejected =
+              queryClient.getQueryData<SupportEntry[]>([
+                "campaign_supports_rejected",
+                conversationId,
+              ]) ?? [];
+            const all = [...selected, ...rejected];
+            if (all.length > 0) {
+              const newSelected = all.filter(
+                s => s.support_data?.canal === targetCanal
+              );
+              const newRejected = all.filter(
+                s => s.support_data?.canal !== targetCanal
+              );
+              if (newSelected.length > 0) {
+                queryClient.setQueryData(
+                  ["campaign_supports", conversationId],
+                  newSelected.map(s => ({ ...s, is_selected: true }))
+                );
+                queryClient.setQueryData(
+                  ["campaign_supports_rejected", conversationId],
+                  newRejected.map(s => ({ ...s, is_selected: false }))
+                );
+              }
+            }
+          }
+        }
       }
     }
     if (didInvalidate) {
