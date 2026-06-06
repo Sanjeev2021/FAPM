@@ -135,14 +135,14 @@ export default function ChatPage() {
     prevConversationIdRef.current = conversationId;
   }, [conversationId, queryClient]);
 
-  // Auto-collapse working panel when no supports, expand when supports exist
-  // Skip while loading to avoid flash-collapse on page refresh
+  // Shrink working panel when no supports, expand when supports exist
+  // Skip while loading to avoid flash on page refresh
   useEffect(() => {
     if (workingSetLoading) return;
     if (totalCount === 0) {
-      workingPanelRef.current?.collapse();
+      workingPanelRef.current?.resize(25);
     } else {
-      workingPanelRef.current?.expand();
+      workingPanelRef.current?.resize(70);
     }
   }, [totalCount, workingSetLoading]);
 
@@ -347,7 +347,6 @@ export default function ChatPage() {
             defaultSize={totalCount > 0 ? 70 : 35}
             minSize={25}
             maxSize={80}
-            collapsible
           >
             <WorkingPanel conversationId={conversationId ?? null} onSendMessage={(text) => sendMessage({ text })} messages={messages} />
           </ResizablePanel>
